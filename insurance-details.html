@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insurance Details | Dermis Detect</title>
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/insurance-detail.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="img/insurancy logo.jpg" alt="logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li>
+					<a href="insurance.html">Insurance</a>
+					<ul class="dropdown-list" style="list-style:none; margin:0; padding:0; background-color:transparent;">
+    				<li style="margin:0; padding:0; background-color:#007bff; border-radius:8px; overflow:hidden;">
+      					<a href="insurance-details.html" 
+         					style="display:block; width:100%; color:white; padding:10px 15px; text-decoration:none; background-color:#007bff;">
+        				 Policy
+      					</a>
+ 				 	</li>
+				</ul>
+				</li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+				<li><button onclick="toggleDropdown()"
+        				style="background-color:#007bff; color:white; border:none; padding:10px 20px; border-radius:12px; cursor:pointer; font-size:16px;">
+        				Check Lesion
+    				</button>
+    				<ul class="dropdown-list" style="list-style:none; padding:0; margin:0; background-color:#E37383; border-radius:12px; width:200px; overflow:hidden;">
+        				<li>
+           			 		<a href="https://4efb9f4a7cd6aef312.gradio.live/" 
+              		   			style="display:block; padding:10px 15px; color:white; text-decoration:none; border:none; outline:none;">
+                	   			Upload Skin Image
+            		 		</a>
+        				</li>
+    				</ul>
+					</li>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+	<!-------------------- Breadcrumb section ------------------->
+	<section class="breadcrumbs">
+		<div class="breadcrumb-container">
+			<h2 class="hero-heading white">
+				Policy Plans
+			</h2>
+		</div>
+	</section>
+	<!-------------------- Breadcrumb section ------------------->
+
+
+	<!-------------------- Insurance description ----------------->
+	<section class="description">
+		<div class="container">
+			<div class="row">
+				<div class="col desc-content">
+					<h4 class="sub-heading">Policy Summary</h4>
+					<h2 class="heading">
+						How This Policy Helps You
+					</h2>
+
+					<p class="insurance-features">
+						<ion-icon name="planet-outline"></ion-icon> International
+						&nbsp;
+						<ion-icon name="shield-half-outline"></ion-icon> Lifetime Support
+						&nbsp;
+						<ion-icon name="person-circle-outline"></ion-icon> Professional
+						&nbsp;
+						<ion-icon name="newspaper-outline"></ion-icon> Trustworthy
+					</p>
+
+					<p class="para-line"style="text-align: justify;">
+						Our Skin Cancer Detection Insurance offers flexible coverage options and affordable subscription plans to promote early diagnosis and care. You can choose from Basic, Standard and Premium options each including AI-based screening, dermatologist consultations, and follow-up evaluations. With monthly or yearly subscription choices, this policy ensures continuous protection and peace of mind for you and your loved ones.
+					</p>
+
+					<button class="btn btn-blue">
+						<a href="#">Buy Now</a>
+					</button>
+				</div>
+				<div class="col desc-img-content">
+					<img src="img/detail-car.jpg" alt="Policy" title="Policy" class="insurance-detail-img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-------------------- Insurance description ----------------->
+
+
+
+	<!-------------------- Policy section ---------------------->
+	<section class="policy">
+		<div class="container">
+			<h4 class="sub-heading">Our Packages</h4>
+			<h2 class="heading">
+				Package policies
+			</h2>
+
+			<div class="policies">
+				<div class="single-policy">
+					<ion-icon name="bag-handle-outline"></ion-icon>
+					<p class="para-line"style="text-align: justify;">
+						Ideal for individuals seeking essential coverage for early skin cancer screening and consultation.
+					</p>
+				</div>
+				<div class="single-policy">
+					<ion-icon name="cash-outline"></ion-icon>
+					<p class="para-line"style="text-align: justify;">
+						Includes AI-based detection tools, dermatologist visits and annual follow-up care.
+					</p>
+				</div>
+				<div class="single-policy">
+					<ion-icon name="heart-outline"></ion-icon>
+					<p class="para-line"style="text-align: justify;">
+						Comprehensive protection with unlimited screenings, expert diagnostics and priority medical access.
+					</p>
+				</div>
+				<div class="single-policy">
+					<ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+					<p class="para-line"style="text-align: justify;">
+						Full family coverage for preventive checkups, AI detection reports and treatment assistance.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-------------------- Policy section ---------------------->
+
+
+
+	<!------------------------ Agent CTA -------------------------->
+	<section class="agent-cta">
+		<div class="container">
+			<h2 class="heading white">Need an advice? Talk to an Agent</h2>
+
+			<div class="row agents">
+				<div class="col agent">
+					<p class="para-line white">Personal Packages</p>
+					<hr>
+					<h3 class="agent-name white">Cheryl Welch</h3>
+					<p class="agent-email white">
+						<ion-icon name="call-outline"></ion-icon>
+						(+042) 9867 104348
+					</p>
+					<p class="agent-email white">
+						<ion-icon name="mail-outline"></ion-icon>
+						personalagent@dermis.detect
+					</p>
+				</div>
+				<div class="col agent">
+					<p class="para-line white">Business Packages</p>
+					<hr>
+					<h3 class="agent-name white">John Marshall</h3>
+					<p class="agent-email white">
+						<ion-icon name="call-outline"></ion-icon>
+						(+042) 9867 124588
+					</p>
+					<p class="agent-email white">
+						<ion-icon name="mail-outline"></ion-icon>
+						businessagent@dermis.detect
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------ Agent CTA -------------------------->
+
+
+	<!------------------------ Available Insurance pack ---------------->
+	<section class="insurance-packs">
+		<div class="container">
+			<img src="img/Available package.jpg" alt="Our Packages" title="Our packages" class="insurance-pack-img">
+
+			<h4 class="sub-heading">Our Packages</h4>
+			<h2 class="heading">
+				Subscriptions
+			</h2>
+
+			<div class="row ins-pack-row">
+				<div class="col ins-pack-col">
+					<h3 class="ins-pack-name">Basic Care Plan</h3>
+					<p class="ins-pack-price">$49 / month</p>
+				</div>
+				<div class="col ins-pack-col">
+					<p class="insurance-features">
+						<ion-icon name="planet-outline"></ion-icon> International
+						&nbsp;
+						<ion-icon name="shield-half-outline"></ion-icon> Lifetime Support
+						&nbsp;
+						<ion-icon name="person-circle-outline"></ion-icon> Professional
+						&nbsp;
+						<ion-icon name="newspaper-outline"></ion-icon> Trustworthy
+					</p>
+
+					<p class="para-line"style="text-align: justify;">
+						Get essential coverage for early skin cancer detection, including one annual screening and dermatologist consultation. Ideal for individuals starting preventive care.
+					</p>
+
+					<button class="pack-cta">
+						<a href="#">
+							Get a Quote <ion-icon name="chevron-forward-outline"></ion-icon>
+						</a>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row ins-pack-row">
+				<div class="col ins-pack-col">
+					<h3 class="ins-pack-name">Standard Protection Plan</h3>
+					<p class="ins-pack-price">$89 / month</p>
+				</div>
+				<div class="col ins-pack-col">
+					<p class="insurance-features">
+						<ion-icon name="planet-outline"></ion-icon> International
+						&nbsp;
+						<ion-icon name="shield-half-outline"></ion-icon> Lifetime Support
+						&nbsp;
+						<ion-icon name="person-circle-outline"></ion-icon> Professional
+						&nbsp;
+						<ion-icon name="newspaper-outline"></ion-icon> Trustworthy
+					</p>
+
+					<p class="para-line"style="text-align: justify;">
+						Enjoy advanced coverage with AI-powered skin analysis, quarterly screenings and priority dermatologist access for quick and accurate diagnosis.
+					</p>
+
+					<button class="pack-cta">
+						<a href="#">
+							Get a Quote <ion-icon name="chevron-forward-outline"></ion-icon>
+						</a>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row ins-pack-row">
+				<div class="col ins-pack-col">
+					<h3 class="ins-pack-name">Premium Health Plan</h3>
+					<p class="ins-pack-price">$149 / year</p>
+				</div>
+				<div class="col ins-pack-col">
+					<p class="insurance-features">
+						<ion-icon name="planet-outline"></ion-icon> International
+						&nbsp;
+						<ion-icon name="shield-half-outline"></ion-icon> Lifetime Support
+						&nbsp;
+						<ion-icon name="person-circle-outline"></ion-icon> Professional
+						&nbsp;
+						<ion-icon name="newspaper-outline"></ion-icon> Trustworthy
+					</p>
+
+					<p class="para-line"style="text-align: justify;">
+						Comprehensive protection with unlimited AI-based detections, expert consultations, and 24/7 tele-health support for complete peace of mind.
+					</p>
+
+					<button class="pack-cta">
+						<a href="#">
+							Get a Quote <ion-icon name="chevron-forward-outline"></ion-icon>
+						</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------ Available Insurance pack ---------------->
+
+
+
+	<!------------------------ Quotation form ------------------------>
+	<section class="quoatation">
+		<div class="container">
+			<div class="row">
+				<div class="col quot-img-col">
+					<div class="spacer"></div>
+				</div>
+				<div class="col">
+					<div class="lead-form">
+						<h class="heading">Get a Quote Now</h>
+
+						<form action="">
+							<div class="input-field">
+								<label for="name">Full Name</label>
+								<input type="text" id="name" placeholder="Your name" required>
+							</div>
+
+							<div class="input-field">
+								<label for="number">Phone No.</label>
+								<input type="text" id="number" placeholder="Your phone number" required>
+							</div>
+
+							<div class="input-field">
+								<label for="email">Email Address</label>
+								<input type="email" id="email" placeholder="Your email address" required>
+							</div>
+
+							<button class="btn btn-blue">
+								<a href="#">Get A Quote</a>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------ Quotation form ------------------------>
+
+	
+
+
+	<!--------------- Footer ------------------>
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2026</p>
+		</div>
+	</footer>
+	<!--------------- Footer ------------------>
+
+	
+	<!-------------- Importing JS file -------------->
+	<script src="js/script.js"></script>
+	
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>

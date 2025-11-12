@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dermis Detect | Be secure for future!</title>
+    <meta name="author" content="web developer" />
+    <!-- Add in your <head> or before </body> -->
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+    <script src="https://unpkg.com/web3modal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/shield.png" />
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+  	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+  <body class="">
+    <!-- Scroll to top starts -->
+    <button id="topBtn">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    <!-- Scroll to top ends -->
+
+    <!-- Navigation starts -->
+    <nav>
+      <div class="menu-container nav-wrapper">
+        <div class="brand">
+          <a href="index.html">
+            <img src="img/insurancy logo.jpg" alt="logo" border="0" />
+          </a>
+        </div>
+
+        <div class="hamberger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-list">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="insurance.html">Insurance</a>
+            <ul class="dropdown-list" style="list-style:none; margin:0; padding:0; background-color:transparent;">
+    				 <li style="margin:0; padding:0; background-color:#007bff; border-radius:8px; overflow:hidden;">
+      					<a href="insurance-details.html" 
+         					style="display:block; width:100%; color:white; padding:10px 15px; text-decoration:none; background-color:#007bff;">
+         					Policy
+						</a>
+					</li>
+					</ul>
+          </li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><button onclick="toggleDropdown()"
+        				style="background-color:#007bff; color:white; border:none; padding:10px 20px; border-radius:12px; cursor:pointer; font-size:16px;">
+        				Check Lesion
+    				</button>
+    				<ul class="dropdown-list" style="list-style:none; padding:0; margin:0; background-color:#E37383; border-radius:12px; width:200px; overflow:hidden;">
+        				<li>
+           			 		<a href="https://4efb9f4a7cd6aef312.gradio.live/" 
+              		   			style="display:block; padding:10px 15px; color:white; text-decoration:none; border:none; outline:none;">
+                	   			Upload Skin Image
+            		 		</a>
+        				</li>
+    				</ul>
+					</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Hero section starts -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="row">
+          <div class="col hero-content">
+            <h2 class="hero-heading white">Your Skin Deserves<br> Expert Care</br></h2>
+            <p class="para-line white"style="text-align: justify;">
+              Comprehensive skin cancer screenings Mole mapping and digital dermoscopy. Advanced surgical and non-surgical treatments Personalized prevention and skincare plans.
+            </p>
+            <div class="inner-row">
+              <div class="inner-col">
+                <button class="btn btn-full-w btn-blue">
+                  <a href="newpg.html">Find Dermatologist</a>
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hero-blank-col"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section ends -->
+
+    <!-- Why us section starts -->
+    <section class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col why-us-content">
+            <h4 class="sub-heading">Why choose us</h4>
+
+            <h2 class="heading">Board-Certified Specialists</h2>
+
+            <p class="para-line"style="text-align: justify;">
+              Our team includes board-certified dermatologists and surgeons with extensive experience in diagnosing and treating all forms of skin cancer, including melanoma, basal cell carcinoma, and  benign keratosis lesions, etc.
+            </p>
+
+            <div class="inner-row why-us-row">
+              <div class="inner-col why-us-col">
+                <ion-icon name="call-outline"></ion-icon>
+                <h3 class="why-us-highlight-heading">24x7 Support</h3>
+                <p class="para-line"style="text-align: justify;">
+                Our dedicated support team is available 24 hours a day to answer urgent questions.
+                </p>
+              </div>
+              <div class="inner-col why-us-col">
+                <ion-icon name="flame-outline"></ion-icon>
+                <h3 class="why-us-highlight-heading">Premium Services</h3>
+                <p class="para-line"style="text-align: justify;">
+                  Experience advanced skin health insights with our Premium Skin Analysis Plan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col why-us-lead-form">
+            <div class="lead-form">
+              <form action="">
+                <div class="input-field">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label for="number">Phone No.</label>
+                  <input
+                    type="text"
+                    id="number"
+                    placeholder="Your phone number"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn-blue">
+                  <a href="#">Get A Quote</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why us section ends -->
+
+    <!-- Services section starts -->
+    <section class="our-services">
+      <div class="container">
+        <img
+          src="img/services.jpg"
+          class="service-img"
+          alt="Our Services"
+          title="Our Services"
+        />
+
+        <h4 class="sub-heading">Services We Provide</h4>
+        <h2 class="heading">Skin Diseases Detection</h2>
+        <p class="para-line head-desc">
+          Upload or capture an image of your skin lesion and our deep learning system instantly scans it for signs of melanoma or other skin diseases.
+        </p>
+
+        <div class="services">
+          <div class="service">
+            <ion-icon name="pulse-outline"></ion-icon>
+            <h2 class="service-heading">Actinic Keratoses and Intraepithelial Carcinoma</h2>
+            <p class="para-line">
+              These are precancerous lesions that can develop into skin cancer if untreated. Early detection is essential for prevention and effective treatment.</p>
+          </div>
+          <div class="service">
+            <ion-icon name="git-commit-outline"></ion-icon>
+            <h2 class="service-heading">Benign Keratosis Lesions</h2>
+            <p class="para-line">
+              Includes seborrheic keratoses and solar lentigines. These are usually non-cancerous but can resemble malignant lesions, making accurate AI analysis vital.</p>
+          </div>
+          <div class="service">
+            <ion-icon name="medkit-outline"></ion-icon>
+            <h2 class="service-heading">Basal Cell Carcinoma</h2>
+            <p class="para-line">
+              A common type of skin cancer that grows slowly and rarely spreads. Detecting BCC early helps prevent tissue damage and scarring.</p>
+          </div>
+          <div class="service">
+            <ion-icon name="fitness-outline"></ion-icon>
+            <h2 class="service-heading">Melanoma</h2>
+            <p class="para-line">
+              The most dangerous form of skin cancer. Our AI system focuses heavily on identifying melanoma at its earliest stage when treatment is most effective.</p>
+          </div>
+          <div class="service">
+            <ion-icon name="bandage-outline"></ion-icon>
+            <h2 class="service-heading">Melanocytic Nevi</h2>
+            <p class="para-line">
+             Most moles are harmless but changes in size, color or shape may indicate risk. Our system tracks such changes for early alerts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services section ends -->
+
+    <!-- Overline section starts -->
+    <section class="overline">
+      <div class="container">
+        <h4 class="sub-heading white">Early Detection of Major Skin Lesion Types</h4>
+
+        <h2 class="heading white">Health Policies</h2>
+
+        <img
+          src="img/insurance-policies.jpg"
+          alt="Health Policies"
+          title="Health policies"
+          class="insurance-policies"
+        />
+
+        <div class="overlines">
+          <div class="row">
+            <div class="col">
+              <ion-icon name="analytics-outline" class="white"></ion-icon>
+              <h2 class="overline-heading">AI-Powered Accuracy</h2>
+              <p class="para-line white">
+                Our system uses deep learning algorithms trained on thousands of skin images to ensure precise and reliable detection of different types.</p>
+            </div>
+            <div class="col">
+              <ion-icon name="briefcase-outline" class="white"></ion-icon>
+              <h2 class="overline-heading">Expert Dermatologist</h2>
+              <p class="para-line white">
+                Each AI prediction can be reviewed and verified by professional dermatologists for complete medical assurance.
+              </p>
+            </div>
+            <div class="col">
+              <ion-icon name="trophy-outline" class="white"></ion-icon>
+              <h2 class="overline-heading">Detection Saves Lives</h2>
+              <p class="para-line white">
+                Detecting cancerous lesions at an early stage greatly improves treatment success. Our AI helps you take timely action.
+              </p>
+            </div>
+            <div class="col">
+              <ion-icon name="planet-outline" class="white"></ion-icon>
+              <h2 class="overline-heading">Secure & Confidential</h2>
+              <p class="para-line white">
+                All your uploaded images and diagnostic data are encrypted and securely stored, ensuring full privacy and protection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-yellow">
+          <a href="#">All Our Policies</a>
+        </button>
+      </div>
+    </section>
+    <!-- Overline section ends -->
+
+    <!-- About section starts -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 class="sub-heading">About the Company</h4>
+            <h2 class="heading">Our Story</h2>
+            <p class="para-line"style="text-align: justify;">
+              Skin cancer affects millions of people every year, and many cases go undetected until it’s too late. Our journey began with a simple goal to make early skin cancer detection accessible to everyone, anywhere in the world.
+            </p>
+
+            <div class="about-highlights">
+              <div class="about-highlight-line">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <h5 class="highlight-line-heading">Experienced Team</h5>
+              </div>
+              <div class="about-highlight-line">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <h5 class="highlight-line-heading">
+                  Online Assistant
+                </h5>
+              </div>
+              <div class="about-highlight-line">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <h5 class="highlight-line-heading">Health Coverage</h5>
+              </div>
+            </div>
+
+            <button class="btn btn-blue btn-full-w">
+              <a href="#">Read More</a>
+            </button>
+          </div>
+          <div class="col">
+            <img
+              src="img/about-img.jpg"
+              alt="Our Story"
+              title="Our Story"
+              class="about-img"
+            />
+          </div>
+        </div>
+
+        <div class="partners">
+          <div class="row">
+            <div class="col">
+              <h4 class="sub-heading">Companies we work with</h4>
+              <h2 class="heading">Collaboration Partners</h2>
+            </div>
+            <div class="col partners-grid">
+              <img
+                src="img/partner-1.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+              <img
+                src="img/partner-2.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+              <img
+                src="img/partner-3.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+              <img
+                src="img/partner-4.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+              <img
+                src="img/partner-5.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+              <img
+                src="img/partner-6.png"
+                alt="Partner"
+                title="Partner"
+                class="partner-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- Testimonial section starts -->
+    <section class="testimonial">
+      <div class="container">
+        <h4 class="sub-heading white">Testimonials</h4>
+        <h2 class="heading white">What Our Customers Say</h2>
+        <p class="para-line white">
+          "I uploaded a photo of a mole I was worried about, and the AI instantly flagged it as high risk. I visited a dermatologist and caught it early this app truly saved my life!"
+        </p>
+        <div class="testimonial-profile">
+          <img
+            src="img/client.jpg"
+            alt="Client"
+            title="Client"
+            class="profile-img"
+          />
+          <span>
+            <h6 class="client-name white">Ana Marie Dow</h6>
+            <p class="client-location white">Pasodena</p>
+          </span>
+        </div>
+
+        <div class="stars">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section ends -->
+
+    <section class="consultancy">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="lead-form">
+              <h2>Free 1 Hour Consultancy Session</h2>
+              <form action="">
+                <div class="input-field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" placeholder="Your Name" />
+                </div>
+
+                <div class="input-field">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                  />
+                </div>
+
+                <button class="btn btn-blue">
+                  <a href="#">Get A Quote</a>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="lead-form agent-card">
+              <img
+                src="img/agent.jpg"
+                alt="Agent"
+                title="Agent"
+                class="agent-img"
+              />
+              <h3 class="agent-name">Jason Vickens</h3>
+              <p class="para-line">Senior Dermatologist Agent</p>
+              <h6 class="agent-number">
+                <ion-icon name="call-outline"></ion-icon> (081) 1149-5421-2315
+              </h6>
+              <h6 class="agent-email">
+                <ion-icon name="mail-unread-outline"></ion-icon>
+                jason@dermisdetect.com
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- Footer ------------------>
+    <footer>
+      <div class="footer-container">
+        <p class="para-line white">Copyright © 2026</p>
+      </div>
+    </footer>
+    <!--------------- Footer ------------------>
+
+    <!-------------- Importing JS file -------------->
+    <script src="js/script.js"></script>
+
+    <script>
+      // ------------------------ Scroll to top button --------------------
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 40) {
+            $("#topBtn").fadeIn();
+          } else {
+            $("#topBtn").fadeOut();
+          }
+        });
+
+        $("#topBtn").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+        });
+      });
+      // ------------------------ Scroll to top button --------------------
+    </script>
+  </body>
+</html>

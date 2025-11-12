@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News | Dermis Detect</title>
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/news-view.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="img/insurancy logo.jpg" alt="logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li>
+					<a href="insurance.html">Insurance</a>
+					<ul class="dropdown-list" style="list-style:none; margin:0; padding:0; background-color:transparent;">
+    				 <li style="margin:0; padding:0; background-color:#007bff; border-radius:8px; overflow:hidden;">
+      					<a href="insurance-details.html" 
+         					style="display:block; width:100%; color:white; padding:10px 15px; text-decoration:none; background-color:#007bff;">
+         					Policy
+						</a>
+					</li>
+					</ul>
+				</li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+				<li><button onclick="toggleDropdown()"
+        				style="background-color:#007bff; color:white; border:none; padding:10px 20px; border-radius:12px; cursor:pointer; font-size:16px;">
+        				Check Lesion
+    				</button>
+    				<ul class="dropdown-list" style="list-style:none; padding:0; margin:0; background-color:#E37383; border-radius:12px; width:200px; overflow:hidden;">
+        				<li>
+           			 		<a href="https://4efb9f4a7cd6aef312.gradio.live/" 
+              		   			style="display:block; padding:10px 15px; color:white; text-decoration:none; border:none; outline:none;">
+                	   			Upload Skin Image
+            		 		</a>
+        				</li>
+    				</ul>
+					</li>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+	<!-- ------------------------------- Blog page ------------------------- -->
+	<section class="news-view">
+		<div class="container">
+			<h2 class="heading">How is AI transforming the insurance industry ?</h2>
+			<p class="author">by <a href="https://www.facebook.com/share/17gzHuk4Kq/">omer aftab</a></p>
+
+			<img src="img/9.png" alt="news" title="news" class="featured-img">
+
+			<h2 class="heading">Introduction</h2>
+
+			<p class="para-line"style="text-align: justify;">
+				Artificial Intelligence is no longer a futuristic concept in the insurance industry it's actively reshaping how insurers operate, assess risk, and serve customers right now. From the moment you request a quote to the day you file a claim, AI algorithms are working behind the scenes, analyzing millions of data points to make faster, smarter decisions than ever before. This technological revolution addresses long-standing pain points that have plagued the insurance industry for decades, slow underwriting processes that kept customers waiting weeks for approval, claims that took months to settle, fraud that cost billions annually, and policies that didn't reflect individual risk profiles.
+            </p>
+
+			<br><p class="para-line"style="text-align: justify;">
+				Traditional insurance relied heavily on historical data, manual reviews and human judgment processes that were time-consuming, expensive and prone to inconsistency. Today's AI-powered systems can evaluate risk in seconds, detect fraudulent patterns invisible to human eyes and personalize coverage with unprecedented precision.
+            </p></br>
+
+			<h2 class="heading">Story</h2>
+
+			<p class="para-line"style="text-align: justify;">
+				When Robert's car was hit in a parking lot last year, he dreaded the claims process past experience taught him it meant multiple phone calls, scheduled inspections, paperwork and weeks of waiting. But his new insurer's AI-powered system completely changed his expectations. Within minutes of the accident, Robert opened the insurance app, used his phone's camera to photograph the damage from multiple angles and submitted his claim. "I was skeptical that taking a few pictures could replace a real inspection," Robert admits. Behind the scenes, the insurer's computer vision AI analyzed the images, identified the damaged parts, estimated repair costs by comparing against thousands of similar claims and cross-referenced local body shop rates all in under two minutes. The system detected no red flags for fraud, verified Robert's coverage and approved the claim instantly. By the time Robert finished his coffee, he had approval for $3,200 in repairs and a list of recommended body shops. Three days later, his car was fixed. "The whole thing took less time than my previous insurer took just to return my first phone call," he marvels.
+            </p>
+
+			<h2 class="heading">Conclusion</h2>
+
+			<p class="para-line"style="text-align: justify;">
+				Artificial Intelligence is fundamentally transforming the insurance industry from a slow, paper heavy business into a fast, data-driven service that better serves modern consumers. The benefits are undeniable, claims that once took weeks now settle in hours, underwriting that required days of manual review happens in seconds and customers receive personalized coverage that actually reflects their individual risk rather than broad demographic assumptions. AI-powered fraud detection saves the industry billions annually savings that translate to lower premiums for honest policyholders.
+            </p>
+
+
+			<div class="lead-form">
+				<form action="">
+					<div class="field-row">
+						<div class="input-field">
+							<label for="name">Full Name</label>
+							<input type="text" id="name" placeholder="Your name" required>
+						</div>
+
+						<div class="input-field">
+							<label for="number">Phone No.</label>
+							<input type="text" id="number" placeholder="Your phone number" required>
+						</div>
+
+						<div class="input-field">
+							<label for="text">Website</label>
+							<input type="text" id="website" placeholder="Your website link" required>
+						</div>
+					</div>
+
+					<div class="input-field">
+						<label for="text">Comment*</label>
+						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="message line here"></textarea>
+					</div>
+
+					<input type="checkbox" id="save-info" name="save-info">
+					<label for="save-info">
+						Save my name, email, and website in this browser for the next time I comment.
+					</label>
+
+					<br>
+					<br>
+
+					<button class="btn btn-blue">
+						<a href="#">Post Comment</a>
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- ------------------------------- Blog page ------------------------- -->
+
+
+	<!--------------- Footer ------------------>
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2026</p>
+		</div>
+	</footer>
+	<!--------------- Footer ------------------>
+
+
+	<!-------------- Importing JS file -------------->
+	<script src="js/script.js"></script>
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>

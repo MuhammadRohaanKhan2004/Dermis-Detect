@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us | Dermis Detect</title>
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/about.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="img/insurancy logo.jpg" alt="logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li>
+					<a href="insurance.html">Insurance</a>
+					<ul class="dropdown-list" style="list-style:none; margin:0; padding:0; background-color:transparent;">
+    				 <li style="margin:0; padding:0; background-color:#007bff; border-radius:8px; overflow:hidden;">
+      					<a href="insurance-details.html" 
+         					style="display:block; width:100%; color:white; padding:10px 15px; text-decoration:none; background-color:#007bff;">
+         					Policy
+						</a>
+					</li>
+					</ul>
+				</li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+					<li><button onclick="toggleDropdown()"
+        				style="background-color:#007bff; color:white; border:none; padding:10px 20px; border-radius:12px; cursor:pointer; font-size:16px;">
+        				Check Lesion
+    				</button>
+    				<ul class="dropdown-list" style="list-style:none; padding:0; margin:0; background-color:#E37383; border-radius:12px; width:200px; overflow:hidden;">
+        				<li>
+           			 		<a href="https://4efb9f4a7cd6aef312.gradio.live/" 
+              		   			style="display:block; padding:10px 15px; color:white; text-decoration:none; border:none; outline:none;">
+                	   			Upload Skin Image
+            		 		</a>
+        				</li>
+    				</ul>
+					</li>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-------------------- Breadcrumb section ------------------->
+	<section class="breadcrumbs">
+		<div class="breadcrumb-container">
+			<h2 class="hero-heading white">
+				About Us
+			</h2>
+		</div>
+	</section>
+	<!-------------------- Breadcrumb section ------------------->
+
+
+
+	<!-------------------- Future protection -------------------->
+	<section class="future">
+		<div class="container">
+			<h4 class="sub-heading">Our Journey</h4>
+			<h2 class="heading">
+				Your Life is Protected
+			</h2>
+			<p class="para-line">
+				Founded by a passionate team of researchers, developers and healthcare professionals, we believe technology can bridge the gap between awareness and timely medical action. Our AI model is trained on thousands of real dermoscopic images to ensure high accuracy and reliability in results.
+			</p>
+
+			<div class="future-protection-imgs">
+				<img src="img/childcare-insurance.png" alt="Future protection" title="Future protection" class="future-protection-img">
+				<img src="img/home-insurance.png" alt="Future protection" title="Future protection" class="future-protection-img">
+				<img src="img/health-insurance.png" alt="Future protection" title="Future protection" class="future-protection-img">
+			</div>
+		</div>
+	</section>
+	<!-------------------- Future protection -------------------->
+
+
+	<!-- ----------------- Company Values --------------------------- -->
+	<section class="values">
+		<div class="container">
+			<h4 class="sub-heading">Our Core Principles</h4>
+			<h2 class="heading">
+				Company Values
+			</h2>
+
+			<div class="company-values">
+				<div class="value">
+					<ion-icon name="key-outline"></ion-icon>
+					<h4 class="value-heading">Accuracy</h4>
+					<p class="para-line">
+						We ensure the highest level of precision in our AI predictions, helping users and professionals make confident decisions.
+					</p>
+				</div>
+				<div class="value">
+					<ion-icon name="finger-print-outline"></ion-icon>
+					<h4 class="value-heading">Trust & Privacy</h4>
+					<p class="para-line">
+						User data is protected with advanced security standards — your images and health details remain fully confidential.</p>
+				</div>
+				<div class="value">
+					<ion-icon name="accessibility-outline"></ion-icon>
+					<h4 class="value-heading">Accessibility</h4>
+					<p class="para-line">
+						We believe that life-saving technology should be available to everyone, regardless of location or income.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----------------- Company Values --------------------------- -->
+
+
+
+	<!-- ------------------------------ Key numbers ------------------------- -->
+	<section class="key-numbers">
+		<div class="container">
+			<h4 class="sub-heading white">dermis detect</h4>
+			<h2 class="heading white">
+				Our Key Values
+			</h2>
+			<p class="para-line white"style="text-align: justify;">				
+				Every innovation we create is built on a foundation of accuracy, compassion and integrity ensuring that users receive reliable insights and complete privacy. Our commitment to these values drives us to keep improving.
+			</p>
+
+			<div class="row key-num-row">
+				<div class="col">
+					<img src="img/key-number-img.png" alt="Representative" title="Representative" class="key-no-img">
+				</div>
+				<div class="col key-num-2-col">
+					<div class="key-number">
+						<h2 class="heading">124+</h2>
+						<p class="para-line">Insurance Partners</p>
+					</div>
+					<div class="key-number">
+						<h2 class="heading">99.7%</h2>
+						<p class="para-line">Customer Satisfaction</p>
+					</div>
+					<div class="key-number">
+						<h2 class="heading">12</h2>
+						<p class="para-line">International Awards</p>
+					</div>
+					<div class="key-number">
+						<h2 class="heading">15</h2>
+						<p class="para-line">Worldwide Offices</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ------------------------------ Key numbers ------------------------- -->
+
+
+
+	<!-- -------------------------- Highlights ------------------------------ -->
+	<section class="company-highlights">
+		<div class="container">
+			<div class="highlight">
+				<ion-icon name="prism-outline"></ion-icon>
+				<h3 class="highlight-heading">Leading Partners</h3>
+				<p class="para-line"style="text-align: justify;">
+					We partner with top hospitals, research centers and dermatology clinics to ensure clinical-grade reliability.
+				</p>
+			</div>
+			<div class="highlight">
+				<ion-icon name="radio-outline"></ion-icon>
+				<h3 class="highlight-heading">Global Presence</h3>
+				<p class="para-line"style="text-align: justify;">
+					Our platform is used by patients and clinicians around the world for fast, accessible skin screening.
+				</p>
+			</div>
+			<div class="highlight">
+				<ion-icon name="thumbs-up-outline"></ion-icon>
+				<h3 class="highlight-heading">24x7 Support</h3>
+				<p class="para-line"style="text-align: justify;">
+					Round-the-clock help for app issues, urgent questions and guidance after high-risk alerts.</p>
+			</div>
+			<div class="highlight">
+				<ion-icon name="wallet-outline"></ion-icon>
+				<h3 class="highlight-heading">Financial Advising </h3>
+				<p class="para-line"style="text-align: justify;">
+					Flexible subscription plans and guidance on insurance-covered consultations to make care affordable.
+				</p>
+			</div>
+			<div class="highlight">
+				<ion-icon name="shield-checkmark-outline"></ion-icon>
+				<h3 class="highlight-heading">Online Assistant</h3>
+				<p class="para-line"style="text-align: justify;">
+					An AI guide walks you through image capture, explains results.
+				</p>
+			</div>
+			<div class="highlight">
+				<ion-icon name="people-outline"></ion-icon>
+				<h3 class="highlight-heading">Best Agents</h3>
+				<p class="para-line"style="text-align: justify;">
+					Connect instantly with certified expert and specialist reviewers for follow-up.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- -------------------------- Highlights ------------------------------ -->
+
+
+
+	<!-- --------------------------- Our team -------------------------------- -->
+	<section class="our-team">
+		<div class="container">
+			<h4 class="sub-heading">Agency Pillars</h4>
+			<h2 class="heading">
+				Our Team
+			</h2>
+
+			<div class="team-members">
+				<div class="team-member">
+					<img src="img/member-1.jpg" title="Team Member" alt="Team Member" class="member-img">
+					<div class="member-content">
+						<p class="member-designation">Manager - Founder</p>
+						<h3 class="member-name">Elise George</h3>
+						<p class="para-line"style="text-align: justify;">
+					     “Our mission is to make early skin cancer detection fast, accurate and accessible to everyone.”
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<img src="img/member-2.png" title="Team Member" alt="Team Member" class="member-img">
+					<div class="member-content">
+						<p class="member-designation">Insurance officer</p>
+						<h3 class="member-name">Jane Perkins</h3>
+						<p class="para-line"style="text-align: justify;">
+						 “We built this platform to give patients peace of mind-health protection backed by smart technology.”
+					    </p>
+					</div>
+				</div>
+				<div class="team-member">
+					<img src="img/member-3.jpg" title="Team Member" alt="Team Member" class="member-img">
+					<div class="member-content">
+						<p class="member-designation">Policy Manager - Cofounder</p>
+						<h3 class="member-name">Sharon Morgan</h3>
+						<p class="para-line"style="text-align: justify;">
+						 “Every guideline we set ensures your data stays secure and our service remains transparent and trusted.”
+					    </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- --------------------------- Our team -------------------------------- -->
+
+
+
+	<!-- ---------------------------- About CTA --------------------------- -->
+	<section class="about-cta">
+		<div class="container">
+			<div class="row">
+				<div class="col cta-content-col">
+					<h2 class="heading white">
+						Talk to an Assistant
+					</h2>
+					<p class="para-line white">
+						Your digital assistant is one click away.</p>
+				</div>
+				<div class="col cta-btn-col">
+					<button class="btn btn-yellow">
+						<a href="#">
+							Call Now
+						</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ---------------------------- About CTA --------------------------- -->
+
+
+	<!--------------- Footer ------------------>
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2026</p>
+		</div>
+	</footer>
+	<!--------------- Footer ------------------>
+
+
+	<!-------------- Importing JS file -------------->
+	<script src="js/script.js"></script>
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>
