@@ -116,8 +116,38 @@
         loading="eager" 
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-</body>
+
+<!--------------- Footer ------------------>
+    <footer>
+      <div class="footer-container">
+        <p class="para-line white">Copyright © 2026</p>
+      </div>
+    </footer>
+    <!--------------- Footer ------------------>
+
+    <!-------------- Importing JS file -------------->
+    <script src="js/script.js"></script>
+
+    <script>
+      // ------------------------ Scroll to top button --------------------
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 40) {
+            $("#topBtn").fadeIn();
+          } else {
+            $("#topBtn").fadeOut();
+          }
+        });
+
+        $("#topBtn").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+        });
+      });
+      // ------------------------ Scroll to top button --------------------
+    </script>
+  </body>
 </html>
+
 
 
 
